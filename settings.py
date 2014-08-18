@@ -198,7 +198,7 @@ SITE_ID = 1
 
 # If you set this to False, Django will make some optimizations so as not
 # to load the internationalization machinery.
-USE_I18N = False
+USE_I18N = True
 
 # Tuple of IP addresses, as strings, that:
 #   * See debug comments, when DEBUG is true
@@ -307,6 +307,9 @@ INSTALLED_APPS = (
     "django.contrib.sites",
     "django.contrib.sitemaps",
     "django.contrib.staticfiles",
+
+    'mycart',
+
     "cartridge.shop",
     "mezzanine.boot",
     "mezzanine.conf",
@@ -316,7 +319,8 @@ INSTALLED_APPS = (
     "mezzanine.forms",
     "mezzanine.pages",
     "mezzanine.galleries",
-    "mezzanine.twitter",
+
+    #"mezzanine.twitter",
     #"mezzanine.accounts",
     #"mezzanine.mobile",
 )
@@ -334,6 +338,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     "django.core.context_processors.request",
     "django.core.context_processors.tz",
     "mezzanine.conf.context_processors.settings",
+    'mezzanine.pages.context_processors.page',
 )
 
 # List of middleware classes to use. Order is important; in the request phase,

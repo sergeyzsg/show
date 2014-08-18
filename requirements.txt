@@ -1,1 +1,4 @@
+cartridge==0.9.5
 Mezzanine==3.1.9
+--allow-external mysql-connector-python
+mysql-connector-python==1.2.2
